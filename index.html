@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Retail Sales Analytics Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-4">Comprehensive Sales Analysis and Strategy Report for ABC Retail</h1>
+
+        <!-- Executive Summary -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold mb-2">Executive Summary</h2>
+            <p>This report explores historical sales data, predicts upcoming sales, and provides strategic
+                recommendations to improve performance.</p>
+        </section>
+
+        <!-- Descriptive Analytics -->
+        <section id="descriptive" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">Descriptive Analytics</h2>
+
+            <!-- Charts -->
+            <div class="space-y-6 mb-6">
+                <canvas id="yearlySalesChart" class="w-full h-64"></canvas>
+                <canvas id="monthlyTrendChart" class="w-full h-64"></canvas>
+            </div>
+
+
+            <!-- Sales Stats -->
+            <div class="bg-gray-50 p-4 rounded shadow">
+                <p><strong>Total Sales Per Year:</strong> <span id="totalSales"></span></p>
+                <p><strong>Average Monthly Sales:</strong> <span id="avgSales"></span></p>
+            </div>
+        </section>
+
+        <!-- Predictive Analytics -->
+        <section id="predictive" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">Predictive Analytics</h2>
+            <canvas id="forecastChart" class="mb-4"></canvas>
+            <p><strong>Forecast Summary:</strong> <span id="forecastSummary"></span></p>
+        </section>
+
+        <!-- Prescriptive Analytics -->
+        <section id="prescriptive" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">Prescriptive Analytics</h2>
+            <ul class="list-disc list-inside">
+                <li>Increase marketing spend during peak months identified in the trend chart.</li>
+                <li>Adjust inventory ahead of projected sales spikes.</li>
+                <li>Engage customers with loyalty incentives based on feedback patterns.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">Conclusion</h2>
+            <p>ABC Retail has opportunities to enhance performance through data-driven decisions. This report provides
+                the basis for targeted strategies in the next quarter.</p>
+        </section>
+    </div>
+</body>
+
+</html>

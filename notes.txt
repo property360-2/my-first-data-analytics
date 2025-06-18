@@ -1,0 +1,45 @@
+abc-retail-report/
+├── index.html
+├── style.css (optional)
+├── sales_data.json
+├── script.js
+
+
+"Sales Data": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Sales (Php)": 12000
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Sales (Php)": 11500
+        }
+],
+"Customer Feedback Scores": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4
+        }
+],
+"Inventory Level Units": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Inventory Level (units)": 500
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Inventory Level (units)": 450
+        }
+]
+
+

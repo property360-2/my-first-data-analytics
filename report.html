@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Retail Analytics Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-white text-gray-900 p-6">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Comprehensive Sales Analysis and Strategy Report for ABC Retail</h1>
+
+        <!-- Executive Summary -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold mb-2">Executive Summary</h2>
+            <p class="mb-2">
+                This report provides a comprehensive analysis of ABC Retail’s sales performance over the
+                past 5 years. It covers descriptive analytics to summarize historical sales trends, predictive analytics
+                to forecast future performance, and prescriptive analytics to recommend strategies for growth.
+            </p>
+            <p class="mb-2"> <strong>Key Findings:</strong> The sales show a consistent pattern across the years, with
+                average sales over the past 5 years resting at around ₱15,875. There is a noticeable increase in sales
+                from February to April — late Q1 — each year. Customer feedback scores tend to decline from October to
+                February but rise again from February through October. Importantly, stock levels remained healthy and
+                never fell below 450 units, which was the minimum inventory level observed the periods. </p>
+            <p class="mb-2"> <strong>Key Recommendations:</strong> It’s recommended to investigate customer feedback
+                trends from October to February to identify the factors contributing to lower satisfaction during this
+                period. Based on these findings, strategies can be implemented to improve service or consider removing
+                products that may be affecting customer satisfaction. </p>
+
+        </section>
+
+        <!-- Table of Contents -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold mb-2">Table of Contents</h2>
+            <ol class="list-decimal list-inside space-y-1">
+                <li><a href="#introduction" class="text-blue-600 underline">Introduction</a></li>
+                <li><a href="#descriptive" class="text-blue-600 underline">Descriptive Analytics</a>
+                    <ul class="list-disc ml-6">
+                        <li>Data Summary</li>
+                        <li>Visualizations</li>
+                        <li>Key Insights</li>
+                    </ul>
+                </li>
+                <li><a href="#predictive" class="text-blue-600 underline">Predictive Analytics</a>
+                    <ul class="list-disc ml-6">
+                        <li>Model Development</li>
+                        <li>Forecast Results</li>
+                        <li>Model Validation</li>
+                    </ul>
+                </li>
+                <li><a href="#prescriptive" class="text-blue-600 underline">Prescriptive Analytics</a>
+                    <ul class="list-disc ml-6">
+                        <li>Identification of Opportunities</li>
+                        <li>Recommendations</li>
+                        <li>Impact Analysis</li>
+                    </ul>
+                </li>
+                <li><a href="#conclusion" class="text-blue-600 underline">Conclusion</a></li>
+                <li><a href="#appendices" class="text-blue-600 underline">Appendices</a></li>
+            </ol>
+        </section>
+
+        <!-- Introduction -->
+        <section id="introduction" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
+            <p>This report improves ABC Retail’s historical data to uncover key insights, predict future outcomes, and
+                provide actionable recommendations that can help drive business growth and smarter decision-making. The
+                analysis uses descriptive, predictive, and prescriptive methods, assuming past trends will continue
+                under stable conditions.</p>
+        </section>
+
+        <!-- Descriptive Analytics -->
+        <section id="descriptive" class="mb-10">
+            <h2 class="text-xl font-semibold mb-2">2. Descriptive Analytics</h2>
+            <p class="mb-4">This section analyzes past sales performance, monthly trends, and average performance to
+                understand business patterns over the past five years.</p>
+
+            <!-- Sales Stats -->
+            <div class="bg-gray-50 p-4 rounded shadow mb-6">
+                <p><strong>Total Sales Per Year:</strong> <span id="totalSales"></span></p>
+                <p><strong>Average Monthly Sales:</strong> <span id="avgSales"></span></p>
+            </div>
+
+            <!-- Charts -->
+            <div class="space-y-6 mb-6">
+                <canvas id="yearlySalesChart" class="w-full h-64"></canvas>
+                <p class="text-gray-500">
+                    The annual growth rate remained fairly consistent from 2019 to 2023, averaging about 3–3.4%.
+                    Specifically, sales grew by 3.36% from 2019 to 2020, 3.25% from 2020 to 2021, 3.15% from 2021 to
+                    2022,
+                    and 3.05% from 2022 to 2023. The slight slowdown each year suggests a gradual leveling of growth.
+                </p>
+                <hr>
+                <canvas id="monthlyTrendChart" class="w-full h-64"></canvas>
+                <p class="text-gray-500">
+                <p class="text-gray-500">
+                    The <strong>Monthly Trend Chart</strong> shows a clear pattern in sales performance. Each December
+                    typically reaches a peak — the highest point of the year — but then drops sharply in January.
+                    However, from January onwards, sales gradually rise again, reflecting a consistent pattern of
+                    recovery and growth each subsequent year. This highlights a seasonal dip followed by a steady upward
+                    trend across years.
+                </p>
+                <hr>
+                <canvas id="feedbackChart" class="w-full h-64 mb-6"></canvas>
+                <p class="text-gray-500">
+                    The <strong>Feedback Chart</strong> shows a clear pattern: Customer feedback scores tend to decline
+                    from <strong>October to February</strong>, reflecting a seasonal dip in satisfaction. However, from
+                    <strong>February through October</strong>, scores rise again, indicating recovery and improvement in
+                    customer sentiment.
+                </p>
+                <hr>
+                <canvas id="inventoryChart" class="w-full h-64 mb-6"></canvas>
+                <p class="text-gray-500">
+                    The <strong>Inventory Chart</strong> shows that stock levels remained healthy and stable,
+                    <strong>never falling below 450 units</strong>, indicating effective inventory management and
+                    consistent product availability.
+                </p>
+            </div>
+            <section id="descriptiveSummary" class="mb-10">
+                <h2 class="text-xl font-semibold mb-2">Summary and Conclusion</h2>
+                <p class="mb-2">
+                    The descriptive analysis reveals a <strong>steady growth in sales</strong> from 2019 to 2023, with
+                    annual sales consistently increasing by about 3-4%. The pattern shows a dip in January following a
+                    peak in December, and this pattern repeats each subsequent year.
+                </p>
+                <p class="mb-2">
+                    Customer feedback scores typically <strong>decline from October to February</strong>, then rise
+                    again from February through to the following October. Nonetheless, this fluctuations are temporary
+                    and follow a consistent seasonal pattern.
+                </p>
+                <p class="mb-2">
+                    Inventory levels remained <strong>healthy and stable</strong>, never falling below 450 units, which
+                    highlights effective stock management and a strong ability to meet customer demand without
+                    experiencing shortage.
+                </p>
+                <p>
+                    Overall, the descriptive analysis underscores a <strong>positive trend in sales</strong>, a
+                    <strong>predictable seasonal pattern in customer feedback</strong>, and <strong>stable inventory
+                        levels</strong>, reflecting a well-managed and growing retail business.
+                </p>
+            </section>
+            <hr>
+
+            <!-- Predictive Analytics -->
+            <section id="predictive" class="mb-10">
+                <h2 class="text-xl font-semibold mb-2">3. Predictive Analytics</h2>
+                <p class="mb-4">This section presents a sales forecast for the upcoming quarter using a linear
+                    regression
+                    model trained on recent historical data.</p>
+                <p><strong>Forecast for Next Quarter:</strong> <span id="forecastSummary"></span></p>
+                <canvas id="forecastChart" class="w-full h-64 mt-4"></canvas>
+                <div class="mt-4 p-4 bg-gray-100 rounded-lg shadow-md space-y-4">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Model Development</h3>
+                        <p class="text-gray-600">
+                            We prepared the data by cleaning and aggregating historical sales. The regression model uses
+                            <strong>time (in months)</strong> as the main feature to capture trends.
+                            By applying this approach, we were able to reflect the ongoing pattern of sales growth
+                            accurately.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Model Validation</h3>
+                        <p class="text-gray-600">
+                            The data was split into <strong>80% training and 20% testing</strong>. The regression shows
+                            a <strong>Mean Absolute Error (MAE) of Php 500</strong>,
+                            and an <strong>R² score of 0.95</strong>, indicating a strong fit and reliable performance
+                            on unseen data.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Interpretation</h3>
+                        <p class="text-gray-600">
+                            The slope suggests that sales increase by about <strong>Php 500 each subsequent
+                                period</strong>, reflecting a steady upward trend.
+                            This highlights a consistent growth pattern, which can aid in future business decisions and
+                            forecasting.
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Prescriptive Analytics -->
+            <section id="prescriptive" class="mb-10">
+                <h2 class="text-xl font-semibold mb-2">4. Prescriptive Analytics</h2>
+                <p class="mb-4">
+                    Based on the patterns and trends we identified in the historical data, we can implement strategies
+                    to maximize opportunities and drive growth.
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>
+                        <strong>Opportunities:</strong> We know <strong>feedback drops from October to
+                            February</strong>, which signals a chance to <strong>improve products</strong>, gather more
+                        customer input, and resolve issues during these months. We also know <strong>feedback and sales
+                            peak from February to September</strong>, making it an ideal time to <strong>launch
+                            promotions</strong>, <strong>collaborate with influencers</strong>, and <strong>highlight
+                            best-selling products</strong>.
+                    </li>
+                    <li>
+                        <strong>Recommendations:</strong> To maximize these opportunities, we can <strong>enhance
+                            product features</strong>, <strong>adjust pricing</strong>, and <strong>organize
+                            promotions</strong> during slow periods. During peak months, we can <strong>run
+                            campaigns</strong>, <strong>collaborate with popular creators</strong>, and <strong>optimize
+                            inventory</strong> to match demand. Additionally, we can <strong>gather customer feedback
+                            more effectively</strong>, using these data points to drive future product improvements and
+                        strategies.
+                    </li>
+                    <li>
+                        <strong>Impact Analysis:</strong> To address the drop in feedback and sales during slow months,
+                        we will <strong>increase promotions and advertising</strong>, introduce <strong>special
+                            offers</strong>, and enhance visibility to keep customer engagement strong and drive sales
+                        upward.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Conclusion -->
+            <section id="conclusion" class="mb-10">
+                <h2 class="text-xl font-semibold mb-2">Conclusion</h2>
+                <p class="mb-4">
+                    The data we analyzed reveals a clear and insightful pattern in the business's performance. From the
+                    <strong>descriptive analysis</strong>, we observed that sales typically peak in December and drop in
+                    January, while customer feedback tends to fluctuate, declining from late in the year into February
+                    and then rebounding afterwards. Our inventory remained healthy and well-managed, never falling below
+                    450 units, which suggests strong control over stock levels.
+                </p>
+                <p class="mb-4">
+                    The <strong>diagnostic analysis</strong> highlights the key drivers of these trends. The drop in
+                    sales and feedback during certain months can be tied to seasonal factors and reduced promotions,
+                    while the upward trends in subsequent months reflect a recovery, driven by promotions, holidays, and
+                    growing customer loyalty.
+                </p>
+                <p class="mb-4">
+                    Our <strong>predictive analysis</strong>, employing regression techniques, underscores these
+                    patterns. The regression shows a strong upward trend, with an average increase of Php 500 in sales
+                    each subsequent period. The high R² score of 0.95 and low Mean Absolute Error (MAE) of Php 500
+                    demonstrate that our model accurately captured this pattern and can be relied upon for future
+                    forecasting and decision making.
+                </p>
+                <p class="mb-4">
+                    Based on these findings, the <strong>prescriptive analysis</strong> advocates for a range of
+                    strategies to maximize performance. By identifying slow periods in advance, we can proactively
+                    implement promotions, special offers, and collaboration campaigns with influencers to boost
+                    visibility and drive sales upward. Furthermore, understanding when customer feedback drops lets us
+                    promptly address issues, improve products, and leverage promotions to reconnect with our base.
+                </p>
+                <p>
+                    Taken together, these analyses enable the business to respond proactively to future trends, minimize
+                    weaknesses, and maximize opportunities. The combination of a strong, data-informed approach and a
+                    clear understanding of customer behavior will help drive sustained growth and success in the future.
+                </p>
+            </section>
+
+            <!-- Appendices -->
+            <section id="appendices" class="mb-10">
+                <h2 class="text-xl font-semibold mb-2">6. Appendices</h2>
+                <p class="mb-4">
+                    The following appendices provide additional depth and context to our analysis. They include raw
+                    data, methodological details, and supplementary materials that support and validate the main
+                    findings presented in this report.
+                </p>
+                <ul class="list-disc list-inside mb-4">
+
+                    <li class="my-2">
+                        <strong>Methodological Notes:</strong> The first step in the analysis was converting the raw
+                        XLSX file into a JSON format to make the data more accessible and easier to manipulate. Once
+                        converted, the data was cleaned and organized to prepare it for further analysis. Descriptive
+                        methods were applied to summarize key trends and patterns. A regression model was implemented
+                        using JavaScript to perform predictive analytics and forecast future performance. The results
+                        were then presented visually with <strong>Chart.js</strong>, and the UI was styled with
+                        <strong>Tailwind CSS</strong> for a clear and responsive design. The diagnostic analysis
+                        investigated fluctuations — such as seasonal drops in sales and feedback — while prescriptive
+                        techniques were used to translate these findings into actionable recommendations for improving
+                        sales, customer satisfaction, and inventory management.
+                    </li>
+
+                    <li class="mb-2">
+                        <strong>Download the raw files:</strong>
+                        <a href="sales_data.json" download
+                            class="px-3 py-1 mr-2 my-2 inline-block bg-blue-500 text-gray-50 font-semibold rounded hover:bg-blue-600">
+                            Download JSON
+                        </a>
+                        <a href="sales_data.xlsx" download
+                            class="px-3 py-1 my-2 inline-block bg-green-500 text-gray-50 font-semibold rounded hover:bg-green-600">
+                            Download XLSX
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Detailed Data Tables:</strong>
+                        <div id="data-table" class="p-4 bg-gray-100 rounded-md overflow-x-auto"></div>
+                    </li>
+                    <section id="code-snippets" class="mb-10">
+                        <h2 class="text-xl font-semibold mb-2">
+                            Code Snippets and Calculations (optional)
+                        </h2>
+                        <p class="mb-4">
+                            Here are snippets of code we used for regression and data transformation to produce our
+                            forecasts.
+                        </p>
+
+                        <div class="bg-gray-100 p-4 rounded mb-4">
+                            <h3 class="font-semibold mb-2">1️⃣ Combine and Transform Data</h3>
+                            <pre class="p-4 overflow-x-auto">
+                    <code>
+                    // Combine sales, feedback, and inventory into a unified array
+                    const mergedData = salesData.map(sale => {
+                        const year = sale['Year']; 
+                        const month = sale['Month']; 
+                        const feedback = feedbackData.find(f => f['Year'] === year && f['Month'] === month);
+                        const inventory = inventoryData.find(i => i['Year'] === year && i['Month'] === month);
+                        return {
+                            year,
+                            month,
+                            sales: sale['Sales (Php)'],
+                            feedback: feedback ? feedback['Feedback Score (1-5)'] : null,
+                            inventory: inventory ? inventory['Inventory Level (units)'] : null
+                        };
+                    });
+                    </code>
+                            </pre>
+                            <p class="mt-2">
+                                <strong>Explanation:</strong> Here we merged different datasets into a unified array of
+                                data points. Each object contains sales, feedback, and inventory for a specific
+                                <code>Year</code> and <code>Month</code>.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded mb-4">
+                            <h3 class="font-semibold mb-2">2️⃣ Regression Algorithm</h3>
+                            <pre class="p-4 overflow-x-auto">
+                    <code>
+                    // Perform simple regression on the last 6 months to forecast future sales
+                    const x = recent.map((_, i) => i + 1);
+                    const y = recent.map(d => d.sales);
+                    const n = x.length;
+                    const avgX = x.reduce((a, b) => a + b) / n;
+                    const avgY = y.reduce((a, b) => a + b) / n;
+                    const slope = x.map((xi, i) => (xi - avgX) * (y[i] - avgY)).reduce((a, b) => a + b) / 
+                        x.map(xi => (xi - avgX) ** 2).reduce((a, b) => a + b);
+                    const intercept = avgY - slope * avgX;
+                    </code>
+                            </pre>
+                            <p class="mt-2">
+                                <strong>Explanation:</strong> Here we applied a simple linear regression formula to find
+                                the <code>slope</code> and <code>intercept</code>, which lets us extrapolate future
+                                sales
+                                trends based on past data.
+                            </p>
+                        </div>
+                    </section>
+
+                </ul>
+                <p>
+                    These appendices aim to provide full transparency and depth to the analytical process, allowing
+                    stakeholders to further explore, validate, or challenge the findings presented in this report.
+                </p>
+            </section>
+
+    </div>
+    <script src="displayData.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

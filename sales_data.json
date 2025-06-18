@@ -1,0 +1,898 @@
+{
+    "Sales Data": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Sales (Php)": 12000
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Sales (Php)": 11500
+        },
+        {
+            "Year": 2019,
+            "Month": "Mar",
+            "Sales (Php)": 13000
+        },
+        {
+            "Year": 2019,
+            "Month": "Apr",
+            "Sales (Php)": 14000
+        },
+        {
+            "Year": 2019,
+            "Month": "May",
+            "Sales (Php)": 12500
+        },
+        {
+            "Year": 2019,
+            "Month": "Jun",
+            "Sales (Php)": 15000
+        },
+        {
+            "Year": 2019,
+            "Month": "Jul",
+            "Sales (Php)": 15500
+        },
+        {
+            "Year": 2019,
+            "Month": "Aug",
+            "Sales (Php)": 16000
+        },
+        {
+            "Year": 2019,
+            "Month": "Sep",
+            "Sales (Php)": 16500
+        },
+        {
+            "Year": 2019,
+            "Month": "Oct",
+            "Sales (Php)": 17000
+        },
+        {
+            "Year": 2019,
+            "Month": "Nov",
+            "Sales (Php)": 17500
+        },
+        {
+            "Year": 2019,
+            "Month": "Dec",
+            "Sales (Php)": 18000
+        },
+        {
+            "Year": 2020,
+            "Month": "Jan",
+            "Sales (Php)": 12500
+        },
+        {
+            "Year": 2020,
+            "Month": "Feb",
+            "Sales (Php)": 12000
+        },
+        {
+            "Year": 2020,
+            "Month": "Mar",
+            "Sales (Php)": 13500
+        },
+        {
+            "Year": 2020,
+            "Month": "Apr",
+            "Sales (Php)": 14500
+        },
+        {
+            "Year": 2020,
+            "Month": "May",
+            "Sales (Php)": 13000
+        },
+        {
+            "Year": 2020,
+            "Month": "Jun",
+            "Sales (Php)": 15500
+        },
+        {
+            "Year": 2020,
+            "Month": "Jul",
+            "Sales (Php)": 16000
+        },
+        {
+            "Year": 2020,
+            "Month": "Aug",
+            "Sales (Php)": 16500
+        },
+        {
+            "Year": 2020,
+            "Month": "Sep",
+            "Sales (Php)": 17000
+        },
+        {
+            "Year": 2020,
+            "Month": "Oct",
+            "Sales (Php)": 17500
+        },
+        {
+            "Year": 2020,
+            "Month": "Nov",
+            "Sales (Php)": 18000
+        },
+        {
+            "Year": 2020,
+            "Month": "Dec",
+            "Sales (Php)": 18500
+        },
+        {
+            "Year": 2021,
+            "Month": "Jan",
+            "Sales (Php)": 13000
+        },
+        {
+            "Year": 2021,
+            "Month": "Feb",
+            "Sales (Php)": 12500
+        },
+        {
+            "Year": 2021,
+            "Month": "Mar",
+            "Sales (Php)": 14000
+        },
+        {
+            "Year": 2021,
+            "Month": "Apr",
+            "Sales (Php)": 15000
+        },
+        {
+            "Year": 2021,
+            "Month": "May",
+            "Sales (Php)": 13500
+        },
+        {
+            "Year": 2021,
+            "Month": "Jun",
+            "Sales (Php)": 16000
+        },
+        {
+            "Year": 2021,
+            "Month": "Jul",
+            "Sales (Php)": 16500
+        },
+        {
+            "Year": 2021,
+            "Month": "Aug",
+            "Sales (Php)": 17000
+        },
+        {
+            "Year": 2021,
+            "Month": "Sep",
+            "Sales (Php)": 17500
+        },
+        {
+            "Year": 2021,
+            "Month": "Oct",
+            "Sales (Php)": 18000
+        },
+        {
+            "Year": 2021,
+            "Month": "Nov",
+            "Sales (Php)": 18500
+        },
+        {
+            "Year": 2021,
+            "Month": "Dec",
+            "Sales (Php)": 19000
+        },
+        {
+            "Year": 2022,
+            "Month": "Jan",
+            "Sales (Php)": 13500
+        },
+        {
+            "Year": 2022,
+            "Month": "Feb",
+            "Sales (Php)": 13000
+        },
+        {
+            "Year": 2022,
+            "Month": "Mar",
+            "Sales (Php)": 14500
+        },
+        {
+            "Year": 2022,
+            "Month": "Apr",
+            "Sales (Php)": 15500
+        },
+        {
+            "Year": 2022,
+            "Month": "May",
+            "Sales (Php)": 14000
+        },
+        {
+            "Year": 2022,
+            "Month": "Jun",
+            "Sales (Php)": 16500
+        },
+        {
+            "Year": 2022,
+            "Month": "Jul",
+            "Sales (Php)": 17000
+        },
+        {
+            "Year": 2022,
+            "Month": "Aug",
+            "Sales (Php)": 17500
+        },
+        {
+            "Year": 2022,
+            "Month": "Sep",
+            "Sales (Php)": 18000
+        },
+        {
+            "Year": 2022,
+            "Month": "Oct",
+            "Sales (Php)": 18500
+        },
+        {
+            "Year": 2022,
+            "Month": "Nov",
+            "Sales (Php)": 19000
+        },
+        {
+            "Year": 2022,
+            "Month": "Dec",
+            "Sales (Php)": 19500
+        },
+        {
+            "Year": 2023,
+            "Month": "Jan",
+            "Sales (Php)": 14000
+        },
+        {
+            "Year": 2023,
+            "Month": "Feb",
+            "Sales (Php)": 13500
+        },
+        {
+            "Year": 2023,
+            "Month": "Mar",
+            "Sales (Php)": 15000
+        },
+        {
+            "Year": 2023,
+            "Month": "Apr",
+            "Sales (Php)": 16000
+        },
+        {
+            "Year": 2023,
+            "Month": "May",
+            "Sales (Php)": 14500
+        },
+        {
+            "Year": 2023,
+            "Month": "Jun",
+            "Sales (Php)": 17000
+        },
+        {
+            "Year": 2023,
+            "Month": "Jul",
+            "Sales (Php)": 17500
+        },
+        {
+            "Year": 2023,
+            "Month": "Aug",
+            "Sales (Php)": 18000
+        },
+        {
+            "Year": 2023,
+            "Month": "Sep",
+            "Sales (Php)": 18500
+        },
+        {
+            "Year": 2023,
+            "Month": "Oct",
+            "Sales (Php)": 19000
+        },
+        {
+            "Year": 2023,
+            "Month": "Nov",
+            "Sales (Php)": 19500
+        },
+        {
+            "Year": 2023,
+            "Month": "Dec",
+            "Sales (Php)": 20000
+        }
+    ],
+    "Customer Feedback Scores": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4
+        },
+        {
+            "Year": 2019,
+            "Month": "Mar",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2019,
+            "Month": "Apr",
+            "Feedback Score (1-5)": 4.1
+        },
+        {
+            "Year": 2019,
+            "Month": "May",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2019,
+            "Month": "Jun",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2019,
+            "Month": "Jul",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2019,
+            "Month": "Aug",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2019,
+            "Month": "Sep",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2019,
+            "Month": "Oct",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2019,
+            "Month": "Nov",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2020,
+            "Month": "Dec",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2020,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2020,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4.1
+        },
+        {
+            "Year": 2020,
+            "Month": "Mar",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2020,
+            "Month": "Apr",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2020,
+            "Month": "May",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2020,
+            "Month": "Jun",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2020,
+            "Month": "Jul",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2020,
+            "Month": "Aug",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2020,
+            "Month": "Sep",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2020,
+            "Month": "Oct",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2020,
+            "Month": "Nov",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2021,
+            "Month": "Dec",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2021,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2021,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4.2
+        },
+        {
+            "Year": 2021,
+            "Month": "Mar",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2021,
+            "Month": "Apr",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2021,
+            "Month": "May",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2021,
+            "Month": "Jun",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2021,
+            "Month": "Jul",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2021,
+            "Month": "Aug",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2021,
+            "Month": "Sep",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2021,
+            "Month": "Oct",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2021,
+            "Month": "Nov",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2022,
+            "Month": "Dec",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2022,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2022,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4.3
+        },
+        {
+            "Year": 2022,
+            "Month": "Mar",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2022,
+            "Month": "Apr",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2022,
+            "Month": "May",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2022,
+            "Month": "Jun",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2022,
+            "Month": "Jul",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2022,
+            "Month": "Aug",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2022,
+            "Month": "Sep",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2022,
+            "Month": "Oct",
+            "Feedback Score (1-5)": 4.8
+        },
+        {
+            "Year": 2022,
+            "Month": "Nov",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2023,
+            "Month": "Dec",
+            "Feedback Score (1-5)": 4.8
+        },
+        {
+            "Year": 2023,
+            "Month": "Jan",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2023,
+            "Month": "Feb",
+            "Feedback Score (1-5)": 4.4
+        },
+        {
+            "Year": 2023,
+            "Month": "Mar",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2023,
+            "Month": "Apr",
+            "Feedback Score (1-5)": 4.5
+        },
+        {
+            "Year": 2023,
+            "Month": "May",
+            "Feedback Score (1-5)": 4.6
+        },
+        {
+            "Year": 2023,
+            "Month": "Jun",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2023,
+            "Month": "Jul",
+            "Feedback Score (1-5)": 4.8
+        },
+        {
+            "Year": 2023,
+            "Month": "Aug",
+            "Feedback Score (1-5)": 4.7
+        },
+        {
+            "Year": 2023,
+            "Month": "Sep",
+            "Feedback Score (1-5)": 4.8
+        },
+        {
+            "Year": 2023,
+            "Month": "Oct",
+            "Feedback Score (1-5)": 4.9
+        },
+        {
+            "Year": 2023,
+            "Month": "Nov",
+            "Feedback Score (1-5)": 4.8
+        }
+    ],
+    "Inventory Level Units": [
+        {
+            "Year": 2019,
+            "Month": "Jan",
+            "Inventory Level (units)": 500
+        },
+        {
+            "Year": 2019,
+            "Month": "Feb",
+            "Inventory Level (units)": 450
+        },
+        {
+            "Year": 2019,
+            "Month": "Mar",
+            "Inventory Level (units)": 550
+        },
+        {
+            "Year": 2019,
+            "Month": "Apr",
+            "Inventory Level (units)": 600
+        },
+        {
+            "Year": 2019,
+            "Month": "May",
+            "Inventory Level (units)": 500
+        },
+        {
+            "Year": 2019,
+            "Month": "Jun",
+            "Inventory Level (units)": 650
+        },
+        {
+            "Year": 2019,
+            "Month": "Jul",
+            "Inventory Level (units)": 700
+        },
+        {
+            "Year": 2019,
+            "Month": "Aug",
+            "Inventory Level (units)": 750
+        },
+        {
+            "Year": 2019,
+            "Month": "Sep",
+            "Inventory Level (units)": 800
+        },
+        {
+            "Year": 2019,
+            "Month": "Oct",
+            "Inventory Level (units)": 850
+        },
+        {
+            "Year": 2019,
+            "Month": "Nov",
+            "Inventory Level (units)": 900
+        },
+        {
+            "Year": 2020,
+            "Month": "Dec",
+            "Inventory Level (units)": 950
+        },
+        {
+            "Year": 2020,
+            "Month": "Jan",
+            "Inventory Level (units)": 520
+        },
+        {
+            "Year": 2020,
+            "Month": "Feb",
+            "Inventory Level (units)": 470
+        },
+        {
+            "Year": 2020,
+            "Month": "Mar",
+            "Inventory Level (units)": 570
+        },
+        {
+            "Year": 2020,
+            "Month": "Apr",
+            "Inventory Level (units)": 620
+        },
+        {
+            "Year": 2020,
+            "Month": "May",
+            "Inventory Level (units)": 520
+        },
+        {
+            "Year": 2020,
+            "Month": "Jun",
+            "Inventory Level (units)": 670
+        },
+        {
+            "Year": 2020,
+            "Month": "Jul",
+            "Inventory Level (units)": 720
+        },
+        {
+            "Year": 2020,
+            "Month": "Aug",
+            "Inventory Level (units)": 770
+        },
+        {
+            "Year": 2020,
+            "Month": "Sep",
+            "Inventory Level (units)": 820
+        },
+        {
+            "Year": 2020,
+            "Month": "Oct",
+            "Inventory Level (units)": 870
+        },
+        {
+            "Year": 2020,
+            "Month": "Nov",
+            "Inventory Level (units)": 920
+        },
+        {
+            "Year": 2021,
+            "Month": "Dec",
+            "Inventory Level (units)": 970
+        },
+        {
+            "Year": 2021,
+            "Month": "Jan",
+            "Inventory Level (units)": 540
+        },
+        {
+            "Year": 2021,
+            "Month": "Feb",
+            "Inventory Level (units)": 490
+        },
+        {
+            "Year": 2021,
+            "Month": "Mar",
+            "Inventory Level (units)": 590
+        },
+        {
+            "Year": 2021,
+            "Month": "Apr",
+            "Inventory Level (units)": 640
+        },
+        {
+            "Year": 2021,
+            "Month": "May",
+            "Inventory Level (units)": 540
+        },
+        {
+            "Year": 2021,
+            "Month": "Jun",
+            "Inventory Level (units)": 690
+        },
+        {
+            "Year": 2021,
+            "Month": "Jul",
+            "Inventory Level (units)": 740
+        },
+        {
+            "Year": 2021,
+            "Month": "Aug",
+            "Inventory Level (units)": 790
+        },
+        {
+            "Year": 2021,
+            "Month": "Sep",
+            "Inventory Level (units)": 840
+        },
+        {
+            "Year": 2021,
+            "Month": "Oct",
+            "Inventory Level (units)": 890
+        },
+        {
+            "Year": 2021,
+            "Month": "Nov",
+            "Inventory Level (units)": 940
+        },
+        {
+            "Year": 2022,
+            "Month": "Dec",
+            "Inventory Level (units)": 990
+        },
+        {
+            "Year": 2022,
+            "Month": "Jan",
+            "Inventory Level (units)": 560
+        },
+        {
+            "Year": 2022,
+            "Month": "Feb",
+            "Inventory Level (units)": 510
+        },
+        {
+            "Year": 2022,
+            "Month": "Mar",
+            "Inventory Level (units)": 610
+        },
+        {
+            "Year": 2022,
+            "Month": "Apr",
+            "Inventory Level (units)": 660
+        },
+        {
+            "Year": 2022,
+            "Month": "May",
+            "Inventory Level (units)": 560
+        },
+        {
+            "Year": 2022,
+            "Month": "Jun",
+            "Inventory Level (units)": 710
+        },
+        {
+            "Year": 2022,
+            "Month": "Jul",
+            "Inventory Level (units)": 760
+        },
+        {
+            "Year": 2022,
+            "Month": "Aug",
+            "Inventory Level (units)": 810
+        },
+        {
+            "Year": 2022,
+            "Month": "Sep",
+            "Inventory Level (units)": 860
+        },
+        {
+            "Year": 2022,
+            "Month": "Oct",
+            "Inventory Level (units)": 910
+        },
+        {
+            "Year": 2022,
+            "Month": "Nov",
+            "Inventory Level (units)": 960
+        },
+        {
+            "Year": 2023,
+            "Month": "Dec",
+            "Inventory Level (units)": 1010
+        },
+        {
+            "Year": 2023,
+            "Month": "Jan",
+            "Inventory Level (units)": 580
+        },
+        {
+            "Year": 2023,
+            "Month": "Feb",
+            "Inventory Level (units)": 530
+        },
+        {
+            "Year": 2023,
+            "Month": "Mar",
+            "Inventory Level (units)": 630
+        },
+        {
+            "Year": 2023,
+            "Month": "Apr",
+            "Inventory Level (units)": 680
+        },
+        {
+            "Year": 2023,
+            "Month": "May",
+            "Inventory Level (units)": 580
+        },
+        {
+            "Year": 2023,
+            "Month": "Jun",
+            "Inventory Level (units)": 730
+        },
+        {
+            "Year": 2023,
+            "Month": "Jul",
+            "Inventory Level (units)": 780
+        },
+        {
+            "Year": 2023,
+            "Month": "Aug",
+            "Inventory Level (units)": 830
+        },
+        {
+            "Year": 2023,
+            "Month": "Sep",
+            "Inventory Level (units)": 880
+        },
+        {
+            "Year": 2023,
+            "Month": "Oct",
+            "Inventory Level (units)": 930
+        },
+        {
+            "Year": 2023,
+            "Month": "Nov",
+            "Inventory Level (units)": 980
+        }
+    ]
+}
