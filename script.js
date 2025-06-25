@@ -59,6 +59,38 @@ function renderDescriptiveAnalytics(data) {
     document.getElementById('totalSales').textContent = JSON.stringify(yearlySales);
     document.getElementById('avgSales').textContent = `₱${avgMonthlySales}`;
 
+    // Populate Yearly Sales Table (screen reader only)
+    const yearlySalesTable = document.getElementById('yearly-sales-table');
+    if (yearlySalesTable) {
+        yearlySalesTable.innerHTML = Object.entries(yearlySales)
+            .map(([year, sales]) => `<tr><td>${year}</td><td>${sales}</td></tr>`)
+            .join('');
+    }
+
+    // Populate Monthly Trend Table (screen reader only)
+    const monthlyTrendTable = document.getElementById('monthly-trend-table');
+    if (monthlyTrendTable) {
+        monthlyTrendTable.innerHTML = monthlySales
+            .map(e => `<tr><td>${e.label}</td><td>${e.sales}</td></tr>`)
+            .join('');
+    }
+
+    // Populate Feedback Table (screen reader only)
+    const feedbackTable = document.getElementById('feedback-table');
+    if (feedbackTable) {
+        feedbackTable.innerHTML = feedbackData
+            .map(item => `<tr><td>${item.label}</td><td>${item.score}</td></tr>`)
+            .join('');
+    }
+
+    // Populate Inventory Table (screen reader only)
+    const inventoryTable = document.getElementById('inventory-table');
+    if (inventoryTable) {
+        inventoryTable.innerHTML = inventoryData
+            .map(item => `<tr><td>${item.label}</td><td>${item.inventory}</td></tr>`)
+            .join('');
+    }
+
     // Yearly Sales Chart
     new Chart(document.getElementById('yearlySalesChart'), {
         type: 'bar',
@@ -130,6 +162,14 @@ function renderPredictiveAnalytics(data) {
     const forecast = [n + 1, n + 2, n + 3].map(xf => slope * xf + intercept);
     const labels = ['Next Month', 'Month +2', 'Month +3'];
 
+    // Populate Forecast Table (screen reader only)
+    const forecastTable = document.getElementById('forecast-table');
+    if (forecastTable) {
+        forecastTable.innerHTML = labels
+            .map((label, i) => `<tr><td>${label}</td><td>${forecast[i].toFixed(2)}</td></tr>`)
+            .join('');
+    }
+
     new Chart(document.getElementById('forecastChart'), {
         type: 'line',
         data: {
@@ -144,5 +184,4 @@ function renderPredictiveAnalytics(data) {
     });
 
     document.getElementById('forecastSummary').textContent = `₱${forecast.map(f => f.toFixed(2)).join(', ₱')}`;
-
 }

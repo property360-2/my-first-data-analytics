@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-white text-gray-900 p-6">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:outline-none focus:ring-2 focus:ring-blue-600">Skip to main content</a>
     <div class="max-w-7xl mx-auto">
         <h1 class="text-3xl font-bold mb-6">Comprehensive Sales Analysis and Strategy Report for ABC Retail</h1>
 
@@ -17,7 +18,7 @@
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">Executive Summary</h2>
             <p class="mb-2">
-                This report provides a comprehensive analysis of ABC Retail’s sales performance over the
+                This report provides a comprehensive analysis of ABC Retail's sales performance over the
                 past 5 years. It covers descriptive analytics to summarize historical sales trends, predictive analytics
                 to forecast future performance, and prescriptive analytics to recommend strategies for growth.
             </p>
@@ -26,7 +27,7 @@
                 from February to April — late Q1 — each year. Customer feedback scores tend to decline from October to
                 February but rise again from February through October. Importantly, stock levels remained healthy and
                 never fell below 450 units, which was the minimum inventory level observed the periods. </p>
-            <p class="mb-2"> <strong>Key Recommendations:</strong> It’s recommended to investigate customer feedback
+            <p class="mb-2"> <strong>Key Recommendations:</strong> It's recommended to investigate customer feedback
                 trends from October to February to identify the factors contributing to lower satisfaction during this
                 period. Based on these findings, strategies can be implemented to improve service or consider removing
                 products that may be affecting customer satisfaction. </p>
@@ -67,7 +68,7 @@
         <!-- Introduction -->
         <section id="introduction" class="mb-10">
             <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
-            <p>This report improves ABC Retail’s historical data to uncover key insights, predict future outcomes, and
+            <p>This report improves ABC Retail's historical data to uncover key insights, predict future outcomes, and
                 provide actionable recommendations that can help drive business growth and smarter decision-making. The
                 analysis uses descriptive, predictive, and prescriptive methods, assuming past trends will continue
                 under stable conditions.</p>
@@ -87,7 +88,12 @@
 
             <!-- Charts -->
             <div class="space-y-6 mb-6">
-                <canvas id="yearlySalesChart" class="w-full h-64"></canvas>
+                <canvas id="yearlySalesChart" class="w-full h-64" role="img" aria-label="Bar chart showing yearly sales from 2019 to 2023"></canvas>
+                <table class="sr-only">
+                  <caption>Yearly Sales Data</caption>
+                  <thead><tr><th>Year</th><th>Sales (Php)</th></tr></thead>
+                  <tbody id="yearly-sales-table"></tbody>
+                </table>
                 <p class="text-gray-500">
                     The annual growth rate remained fairly consistent from 2019 to 2023, averaging about 3–3.4%.
                     Specifically, sales grew by 3.36% from 2019 to 2020, 3.25% from 2020 to 2021, 3.15% from 2021 to
@@ -95,7 +101,12 @@
                     and 3.05% from 2022 to 2023. The slight slowdown each year suggests a gradual leveling of growth.
                 </p>
                 <hr>
-                <canvas id="monthlyTrendChart" class="w-full h-64"></canvas>
+                <canvas id="monthlyTrendChart" class="w-full h-64" role="img" aria-label="Line chart showing monthly sales trends with December peaks and January dips"></canvas>
+                <table class="sr-only">
+                  <caption>Monthly Sales Trend Data</caption>
+                  <thead><tr><th>Month</th><th>Sales (Php)</th></tr></thead>
+                  <tbody id="monthly-trend-table"></tbody>
+                </table>
                 <p class="text-gray-500">
                 <p class="text-gray-500">
                     The <strong>Monthly Trend Chart</strong> shows a clear pattern in sales performance. Each December
@@ -105,7 +116,12 @@
                     trend across years.
                 </p>
                 <hr>
-                <canvas id="feedbackChart" class="w-full h-64 mb-6"></canvas>
+                <canvas id="feedbackChart" class="w-full h-64 mb-6" role="img" aria-label="Line chart showing customer feedback scores, declining from October to February and rising from February to October"></canvas>
+                <table class="sr-only">
+                  <caption>Customer Feedback Scores</caption>
+                  <thead><tr><th>Month</th><th>Feedback Score (1-5)</th></tr></thead>
+                  <tbody id="feedback-table"></tbody>
+                </table>
                 <p class="text-gray-500">
                     The <strong>Feedback Chart</strong> shows a clear pattern: Customer feedback scores tend to decline
                     from <strong>October to February</strong>, reflecting a seasonal dip in satisfaction. However, from
@@ -113,7 +129,12 @@
                     customer sentiment.
                 </p>
                 <hr>
-                <canvas id="inventoryChart" class="w-full h-64 mb-6"></canvas>
+                <canvas id="inventoryChart" class="w-full h-64 mb-6" role="img" aria-label="Line chart showing inventory levels, never falling below 450 units"></canvas>
+                <table class="sr-only">
+                  <caption>Inventory Levels</caption>
+                  <thead><tr><th>Month</th><th>Inventory Level (units)</th></tr></thead>
+                  <tbody id="inventory-table"></tbody>
+                </table>
                 <p class="text-gray-500">
                     The <strong>Inventory Chart</strong> shows that stock levels remained healthy and stable,
                     <strong>never falling below 450 units</strong>, indicating effective inventory management and
@@ -152,7 +173,12 @@
                     regression
                     model trained on recent historical data.</p>
                 <p><strong>Forecast for Next Quarter:</strong> <span id="forecastSummary"></span></p>
-                <canvas id="forecastChart" class="w-full h-64 mt-4"></canvas>
+                <canvas id="forecastChart" class="w-full h-64 mt-4" role="img" aria-label="Line chart showing forecasted sales for the next quarter based on regression model"></canvas>
+                <table class="sr-only">
+                  <caption>Forecasted Sales Data</caption>
+                  <thead><tr><th>Month</th><th>Forecasted Sales (Php)</th></tr></thead>
+                  <tbody id="forecast-table"></tbody>
+                </table>
                 <div class="mt-4 p-4 bg-gray-100 rounded-lg shadow-md space-y-4">
                     <div>
                         <h3 class="text-lg font-semibold mb-1">Model Development</h3>
@@ -295,7 +321,7 @@
                     </li>
                     <li>
                         <strong>Detailed Data Tables:</strong>
-                        <div id="data-table" class="p-4 bg-gray-100 rounded-md overflow-x-auto"></div>
+                        <div id="data-table" class="p-4 bg-gray-100 rounded-md overflow-x-auto" role="region" aria-label="Detailed Data Table"></div>
                     </li>
                     <section id="code-snippets" class="mb-10">
                         <h2 class="text-xl font-semibold mb-2">
@@ -365,8 +391,10 @@
             </section>
 
     </div>
+    <main id="main-content">
     <script src="displayData.js"></script>
     <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
