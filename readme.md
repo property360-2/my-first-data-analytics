@@ -1,4 +1,4 @@
-# 📁 Descriptive, Diagnostic, Predictive, and Prescriptive Analytics Project
+why# 📁 Descriptive, Diagnostic, Predictive, and Prescriptive Analytics Project
 
 This project performs a **comprehensive business data analysis** by employing **descriptive**, **diagnostic**, **predictive**, and **prescriptive** techniques.  
 Using **JSON data**, **JavaScript**, **Chart.js**, and **regression models**, we visualize trends, draw actionable conclusions, and make future projections to aid decision-making.
@@ -39,12 +39,4 @@ Using **JSON data**, **JavaScript**, **Chart.js**, and **regression models**, we
 - **JSON:**  
   Stores raw business data — sales, customer feedback, and inventory — in a convenient format for processing.
 
----
 
-## 🔹Installation
-
-1️⃣ **Clone this repository:**
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-```
