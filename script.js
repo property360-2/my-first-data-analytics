@@ -160,26 +160,80 @@ function renderPredictiveAnalytics(data) {
     const intercept = avgY - slope * avgX;
 
     const forecast = [n + 1, n + 2, n + 3].map(xf => slope * xf + intercept);
-    const labels = ['Next Month', 'Month +2', 'Month +3'];
+    
+    // Create labels for historical data (last 6 months) + forecast (3 months)
+    const historicalLabels = recent.map(item => `${item.month} ${item.year}`);
+    const forecastLabels = ['Next Month', 'Month +2', 'Month +3'];
+    const allLabels = [...historicalLabels, ...forecastLabels];
+    
+    // Create data array with historical sales + forecasted sales
+    const historicalSales = recent.map(d => d.sales);
+    const allData = [...historicalSales, ...forecast];
 
-    // Populate Forecast Table (screen reader only)
+    // Populate Forecast Table (screen reader only) - include both historical and forecast
     const forecastTable = document.getElementById('forecast-table');
     if (forecastTable) {
-        forecastTable.innerHTML = labels
-            .map((label, i) => `<tr><td>${label}</td><td>${forecast[i].toFixed(2)}</td></tr>`)
-            .join('');
+        const tableRows = [];
+        // Add historical data rows
+        recent.forEach((item, i) => {
+            tableRows.push(`<tr><td>${item.month} ${item.year}</td><td>${item.sales}</td></tr>`);
+        });
+        // Add forecast data rows
+        forecastLabels.forEach((label, i) => {
+            tableRows.push(`<tr><td>${label}</td><td>${forecast[i].toFixed(2)}</td></tr>`);
+        });
+        forecastTable.innerHTML = tableRows.join('');
     }
 
     new Chart(document.getElementById('forecastChart'), {
         type: 'line',
         data: {
-            labels,
-            datasets: [{
-                label: 'Forecasted Sales',
-                data: forecast,
-                borderColor: 'rgba(255, 99, 132, 1)',
-                fill: false
-            }]
+            labels: allLabels,
+            datasets: [
+                {
+                    label: 'Historical Sales',
+                    data: historicalSales,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                    fill: false
+                },
+                {
+                    label: 'Forecasted Sales',
+                    data: [...Array(historicalSales.length).fill(null), ...forecast],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                    fill: false,
+                    borderDash: [5, 5]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                }
+            },
+            scales: {
+                x: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Time Period'
+                    }
+                },
+                y: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Sales (Php)'
+                    }
+                }
+            }
         }
     });
 
